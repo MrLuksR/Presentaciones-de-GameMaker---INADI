@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentaciones de los Estudiantes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Presentaciones: Conceptos de GameMaker</h1>
+    <p>Selecciona una presentación para visualizarla.</p>
+</header>
+
+<!-- GALERÍA -->
+<section id="galeria" class="galeria">
+
+    <div class="card">
+        <h2>Augusto Lairihoy</h2>
+        <p>Rooms en GameMaker</p>
+
+        <button onclick="abrirPresentacion(
+        'https://www.canva.com/design/DAHQlHQ6g8g/H2nMy9H1tAnecyCVntrNFA/view?embed'
+        )">
+            Abrir presentación
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Vicente Finozzi</h2>
+        <p>Objeto e Instancia</p>
+
+        <button onclick="abrirPresentacion(
+        'https://www.canva.com/design/DAHQlYKFKBo/B6CRwPawD_PRJYGB1CupsA/view?embed'
+        )">
+            Abrir presentación
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Tomás Machiavello</h2>
+        <p>Variables en GameMaker</p>
+
+        <button onclick="abrirPresentacion(
+        'https://www.canva.com/design/DAHQlTCacCM/yaaC7DL-LFfckC0n1ZPOcw/view?embed'
+        )">
+            Abrir presentación
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Luciano Alves</h2>
+        <p>Audios en GameMaker</p>
+
+        <button onclick="abrirPresentacion(
+        'https://www.canva.com/design/DAHQlAoEhSY/kqFWQMlJnRqfhub357xUIQ/view?embed'
+        )">
+            Abrir presentación
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Agustin Minelli</h2>
+        <p>Eventos en GameMaker</p>
+
+        <button onclick="abrirPresentacion(
+        'https://www.canva.com/design/DAHQlDEp608/E6t3C9Kypy-Bb1hONFyH5Q/view?embed'
+        )">
+            Abrir presentación
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Elías Escobar</h2>
+        <p>Condicionales</p>
+
+        <button onclick="abrirPresentacion(
+        'https://www.canva.com/design/DAHQlEkzUtw/eV7AY7gnqS_BaLawX_Yy_A/view?embed'
+        )">
+            Abrir presentación
+        </button>
+    </div>
+
+</section>
+
+<!-- VISOR -->
+<section id="visor" class="oculto">
+
+    <button id="volver" onclick="cerrarPresentacion()">
+        ← Volver a las presentaciones
+    </button>
+
+    <iframe
+        id="iframePresentacion"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
